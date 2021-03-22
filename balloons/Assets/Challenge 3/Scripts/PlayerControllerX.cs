@@ -7,6 +7,7 @@ public class PlayerControllerX : MonoBehaviour
 {
     public bool gameOver;
     public bool isLowEnough;
+    public bool isHighEnough;
 
     public float floatForce;
     private float gravityModifier = 1.5f;
@@ -18,6 +19,7 @@ public class PlayerControllerX : MonoBehaviour
     private AudioSource playerAudio;
     public AudioClip moneySound;
     public AudioClip explodeSound;
+    public AudioClip bounceSound;
 
 
     // Start is called before the first frame update
@@ -52,6 +54,21 @@ public class PlayerControllerX : MonoBehaviour
         if (!isLowEnough)
         {
             playerRb.velocity = Vector3.down;
+        }
+
+        if (playerRb.transform.position.y >= GetComponent<BoxCollider>().size.y)
+        {
+            isHighEnough = true;
+        }
+        else if (playerRb.transform.position.y < GetComponent<BoxCollider>().size.y)
+        {
+            isHighEnough = false;
+        }
+
+        if (!isHighEnough)
+        {
+            playerRb.velocity = new Vector3(0, 12, 0);
+            playerAudio.PlayOneShot(bounceSound, 1.0f);
         }
     }
 
