@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using UnityEngine;
+using UnityEngine.Experimental.XR;
 
 public class PlayerControllerX : MonoBehaviour
 {
@@ -65,7 +66,7 @@ public class PlayerControllerX : MonoBehaviour
             isHighEnough = false;
         }
 
-        if (!isHighEnough)
+        if (!isHighEnough && !gameOver)
         {
             playerRb.velocity = new Vector3(0, 12, 0);
             playerAudio.PlayOneShot(bounceSound, 1.0f);
