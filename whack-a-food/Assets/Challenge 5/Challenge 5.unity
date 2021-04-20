@@ -1165,10 +1165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ec0e4cc7a2b39442b4f49ba90291e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManagerX: {fileID: 0}
-  currentTime: 0
-  startingTime: 60
-  timerText: {fileID: 0}
 --- !u!1 &1390857138
 GameObject:
   m_ObjectHideFlags: 0
