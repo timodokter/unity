@@ -8,12 +8,10 @@ public class Target : MonoBehaviour
 {
     private GamemanagerX GamemanagerX;
     public int pointValue;
-    private bool allDestroyed;
 
     // Start is called before the first frame update
     void Start()
     {
-        allDestroyed = false;
         GamemanagerX = GameObject.Find("GameManager").GetComponent<GamemanagerX>();
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         Physics.IgnoreCollision(player.GetComponent<Collider>(), GetComponent<Collider>());

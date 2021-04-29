@@ -11,6 +11,9 @@ public class PlayerControllerX : MonoBehaviour
     public Rigidbody playerRb;
     private float _rotationSpeed;
     private float _walkingSpeed;
+    private float _sprintingSpeed;
+    private float mySpeed;
+    private bool isSprinting;
 
     public LayerMask groundLayers;
     public float jumpForce = 7;
@@ -31,9 +34,11 @@ public class PlayerControllerX : MonoBehaviour
         playerRb = GetComponent<Rigidbody>();
         _rotationSpeed = 1.5f;
         _walkingSpeed = 5;
+        _sprintingSpeed = 7.5f;
         enemy = GameObject.FindGameObjectWithTag("enemy");
         player = GameObject.FindGameObjectWithTag("Player");
         gothit = false;
+        isSprinting = false;
     }
 
     // Update is called once per frame
@@ -49,13 +54,16 @@ public class PlayerControllerX : MonoBehaviour
         }
         
         //camera movement
-        if (Input.GetAxis("Mouse X") > 0)
+        if (!isSprinting)
         {
-            transform.Rotate((Vector3.up) * _rotationSpeed);
-        }
-        else if (Input.GetAxis("Mouse X") < 0)
-        {
-            transform.Rotate((Vector3.up) * -_rotationSpeed);
+            if (Input.GetAxis("Mouse X") > 0)
+            {
+                transform.Rotate((Vector3.up) * _rotationSpeed);
+            }
+            else if (Input.GetAxis("Mouse X") < 0)
+            {
+                transform.Rotate((Vector3.up) * -_rotationSpeed);
+            }
         }
 
         //player movement
@@ -65,7 +73,18 @@ public class PlayerControllerX : MonoBehaviour
         Vector3 verticalMoveSpeed = vertical * transform.forward * Time.deltaTime;
         Vector3 totalMoveSpeed = horizontalMoveSpeed + verticalMoveSpeed;
         totalMoveSpeed = Vector3.Normalize(totalMoveSpeed);
-        totalMoveSpeed *= _walkingSpeed;
+        mySpeed = _walkingSpeed;
+        if (IsGrounded() && Input.GetKey(KeyCode.LeftShift))
+        {
+            mySpeed = _sprintingSpeed;
+            isSprinting = true;
+        } else
+        {
+            mySpeed = _walkingSpeed;
+            isSprinting = false;
+        }
+        totalMoveSpeed *= mySpeed;
+        Debug.Log(mySpeed);
         if (!gothit)
         {
             playerRb.velocity = new Vector3(totalMoveSpeed.x, playerRb.velocity.y, totalMoveSpeed.z);
@@ -98,13 +117,13 @@ public class PlayerControllerX : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
-        if (other.collider.tag == "enemy")
+        if (other.collider.tag == "enemy" && !gothit)
         {
             GamemanagerX.UpdateLives(1);
             knockbackDirection = playerRb.transform.position - other.transform.position;
             knockbackDirection = knockbackDirection.normalized;
-            knockbackDirection = new Vector3(knockbackDirection.x, playerRb.velocity.y, knockbackDirection.z);
-            playerRb.velocity = knockbackDirection * 15f;
+            knockbackDirection = new Vector3(knockbackDirection.x * 15f, playerRb.velocity.y, knockbackDirection.z * 15f);
+            playerRb.velocity = knockbackDirection;
             gothit = true;
             timer = 0;
         }

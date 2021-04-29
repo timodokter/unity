@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Timers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
@@ -50,13 +51,14 @@ public class GamemanagerX : MonoBehaviour
         StartCoroutine(SpawnTargets());
         StartCoroutine(SpawnEnemys());
         Lives = 5f;
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
         // Debug.Log(SpawnTimer);
-        if (Lives == 0)
+        if (Lives <= 0)
         {
             GameOver();
         }
@@ -118,10 +120,12 @@ public class GamemanagerX : MonoBehaviour
         gameOverText.gameObject.SetActive(true);
         RestartButton.gameObject.SetActive(true);
         isGameActive = false;
+        Time.timeScale = 0;
     }
 
     public void RestartGame()
     {
+        Debug.Log("is restarting");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
