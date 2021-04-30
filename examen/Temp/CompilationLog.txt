@@ -1,0 +1,6 @@
+# Starting compiling Unity.TextMeshPro.Editor.dll
+C:\Program Files\Unity\2020.3.1f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-528c2dbdff279c54e823b4b4dbc7f2d0
+# Starting compiling Unity.Timeline.Editor.dll
+C:\Program Files\Unity\2020.3.1f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-4a492fc6a340f1641bd7a85b42e5d76d
+# Starting compiling Unity.RenderPipelines.Core.Runtime.dll
+C:\Program Files\Unity\2020.3.1f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-d73e7d5f1b3328840a448db2ed3e5b80
