@@ -5,6 +5,8 @@ using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
+    // private GamemanagerX GamemanagerX;
+    
     //variables of the camera
     public float SpeedH = 4;
     public float SpeedV = 4;
@@ -15,7 +17,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        // GamemanagerX = GameObject.Find("GameManager").GetComponent<GamemanagerX>();
     }
 
     // Update is called once per frame
@@ -33,10 +35,13 @@ public class PlayerController : MonoBehaviour
 
     private void shootGun()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
-            
-            Debug.Log("left mouse button is pressed");
-        }
+        // while (GamemanagerX.isGameActive)
+        // {
+            if (Input.GetKey(KeyCode.Mouse0))
+            {
+
+                Debug.Log("left mouse button is pressed");
+            }
+        // }
     }
 }
