@@ -11,19 +11,19 @@ C:\Program Files\Unity\2020.3.1f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/gitrepos/unity/examen
+D:/gitrepos/unity/Examen
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55823
-Successfully changed project path to: D:/gitrepos/unity/examen
-D:/gitrepos/unity/examen
+59366
+Successfully changed project path to: D:/gitrepos/unity/Examen
+D:/gitrepos/unity/Examen
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 54.85 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 25.05 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.1f1 (77a89f25062f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/gitrepos/unity/examen/Assets
+[Subsystems] Discovering subsystems at path D:/gitrepos/unity/Examen/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -35,344 +35,110 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2020.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002222 seconds.
+Registered in 0.110116 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 57.04 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 21.05 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.055 seconds
+- Completed reload, in  3.325 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002321 seconds.
+Registered in 0.049635 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.915 seconds
+- Completed reload, in  1.610 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2345 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.9 MB.
-System memory in use after: 99.4 MB.
+Unloading 1113 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.8 MB.
 
-Unloading 64 unused Assets to reduce memory usage. Loaded Objects now: 2740.
-Total: 4.913900 ms (FindLiveObjects: 0.540800 ms CreateObjectMapping: 0.203100 ms MarkObjects: 2.705200 ms  DeleteObjects: 1.462900 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Cold War Weapons/Ammo/Prefabs/5_45x39mm_spent.prefab
-  artifactKey: Guid(530d97ca955d0ff4a92b1f272f247802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Prefabs/5_45x39mm_spent.prefab using Guid(530d97ca955d0ff4a92b1f272f247802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a6ab86165d23aecd79e6b93375f4d7e') in 0.103302 seconds
-  Import took 0.108004 seconds .
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1557.
+Total: 1.607600 ms (FindLiveObjects: 0.132900 ms CreateObjectMapping: 0.030300 ms MarkObjects: 1.382700 ms  DeleteObjects: 0.060800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000371 seconds.
-  path: Assets/Cold War Weapons/Ammo/Prefabs
-  artifactKey: Guid(8784e0e4cbc0bb24095ee7a43c7e947c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Prefabs using Guid(8784e0e4cbc0bb24095ee7a43c7e947c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c71dcc43dc6cf2c47284b4e7887f5831') in 0.010460 seconds
-  Import took 0.015359 seconds .
+  path: Assets/Scripts
+  artifactKey: Guid(f088ab38e2ee5e8469efb971e2c685be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(f088ab38e2ee5e8469efb971e2c685be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a64c768f5b44cfea76c0ef86a6ddecd') in 0.023314 seconds
+  Import took 0.025013 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/Cold War Weapons/Ammo/Prefabs/5_45x39mm_cartridge.prefab
-  artifactKey: Guid(50555a201aa4fc549a35a0f2451b740a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Prefabs/5_45x39mm_cartridge.prefab using Guid(50555a201aa4fc549a35a0f2451b740a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd2c7b5f453adf41731bddc94b832498') in 0.016642 seconds
-  Import took 0.021462 seconds .
+  Time since last request: 5.489441 seconds.
+  path: Assets/Scripts/Player controller.cs
+  artifactKey: Guid(bfb3983c518382b43ae8627612d2c32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player controller.cs using Guid(bfb3983c518382b43ae8627612d2c32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df23ae004047fb1ca18f33770d398616') in 0.028522 seconds
+  Import took 0.031060 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000463 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.739 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1109 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1561.
+Total: 2.130200 ms (FindLiveObjects: 0.201000 ms CreateObjectMapping: 0.060000 ms MarkObjects: 1.804200 ms  DeleteObjects: 0.063000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000508 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.826 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1109 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1564.
+Total: 1.345300 ms (FindLiveObjects: 0.129800 ms CreateObjectMapping: 0.036300 ms MarkObjects: 1.131200 ms  DeleteObjects: 0.047200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 74.396600 seconds.
-  path: Assets/Cold War Weapons/Ammo/Meshes/5_45x39mm_cartridge.fbx
-  artifactKey: Guid(67d8fefe0695bea45b6dbedc4526c6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Meshes/5_45x39mm_cartridge.fbx using Guid(67d8fefe0695bea45b6dbedc4526c6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13cec83add4044e596732d5fd00427c4') in 0.147469 seconds
-  Import took 0.151947 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.025514 seconds.
-  path: Assets/Cold War Weapons/Ammo/Materials/5_45x39mm.mat
-  artifactKey: Guid(d6a772bd17a9592449f927d12e3e2c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Materials/5_45x39mm.mat using Guid(d6a772bd17a9592449f927d12e3e2c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30ba98dc91d52e4883944b9d6bac152c') in 0.039292 seconds
-  Import took 0.043333 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.806741 seconds.
-  path: Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/5_45x39_AlbedoTransparency.png
-  artifactKey: Guid(4fdc0a17c7385e24b9e777d1e109cd04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/5_45x39_AlbedoTransparency.png using Guid(4fdc0a17c7385e24b9e777d1e109cd04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3365d7b64595594d8604d391916a1046') in 0.045630 seconds
-  Import took 0.049891 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/5_45x39_MetallicSmoothness.png
-  artifactKey: Guid(13e6c5e16f74eb24e9e0cbb164870129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/5_45x39_MetallicSmoothness.png using Guid(13e6c5e16f74eb24e9e0cbb164870129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ed23c6eb75f7590635306a7aa24d649') in 0.017290 seconds
-  Import took 0.022270 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/5_45x39_Roughness.png
-  artifactKey: Guid(a0a5455cd4c49b94a82259c523636b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/5_45x39_Roughness.png using Guid(a0a5455cd4c49b94a82259c523636b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8316f7a83ef0c84d3359ed3c001c88ce') in 0.018084 seconds
-  Import took 0.022486 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/5_45x39_Smoothness.png
-  artifactKey: Guid(8a92aa3570d7d57489b1a109c5cf92c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/5_45x39_Smoothness.png using Guid(8a92aa3570d7d57489b1a109c5cf92c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52dc68b5fefc36d7b8a46aab8c0276e9') in 0.015158 seconds
-  Import took 0.020223 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000348 seconds.
-  path: Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/5_45x39_HDRP_Mask.png
-  artifactKey: Guid(047048a819417cc43b872d6eb4aea887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/5_45x39_HDRP_Mask.png using Guid(047048a819417cc43b872d6eb4aea887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '449a9a06da72be6b0e2a0b54156ea5c9') in 0.020034 seconds
-  Import took 0.024828 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/5_45x39_Metallic.png
-  artifactKey: Guid(1e52e9fa6ea12d04ba01753c89358571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/5_45x39_Metallic.png using Guid(1e52e9fa6ea12d04ba01753c89358571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd8d876ba280a4d005f32eb437ca525') in 0.017957 seconds
-  Import took 0.023270 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000480 seconds.
-  path: Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/5_45x39_Normal.png
-  artifactKey: Guid(af6b4a8569df83f41aa1b545c7eef6ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/5_45x39_Normal.png using Guid(af6b4a8569df83f41aa1b545c7eef6ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d45b298b445c03b51745a6a6565c1dc') in 0.025115 seconds
-  Import took 0.029869 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.871750 seconds.
-  path: Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/Materials
-  artifactKey: Guid(bdf70845b0da4f84ea11d37af0a6ebff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/Materials using Guid(bdf70845b0da4f84ea11d37af0a6ebff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa758157848fd0820dadad331a66a81a') in 0.008089 seconds
-  Import took 0.012032 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.034823 seconds.
-  path: Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/Materials/5_45x39_AlbedoTransparency.mat
-  artifactKey: Guid(f3f7f02d9cd4e464996958f729bc6869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Materials/Textures/5_45x39mm/Materials/5_45x39_AlbedoTransparency.mat using Guid(f3f7f02d9cd4e464996958f729bc6869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cc614b44c9e6d5e456e5c6a98bf3671') in 0.016191 seconds
-  Import took 0.021091 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 97.448633 seconds.
-  path: Assets/Cold War Weapons/Ammo/Prefabs/5_45x39mm_cartridge.prefab
-  artifactKey: Guid(50555a201aa4fc549a35a0f2451b740a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Prefabs/5_45x39mm_cartridge.prefab using Guid(50555a201aa4fc549a35a0f2451b740a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60db7ad9573897c17fb5daa71e70a5d4') in 0.017080 seconds
-  Import took 0.021461 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003057 seconds.
-  path: Assets/Cold War Weapons/Ammo/Prefabs/5_45x39mm_cartridge.prefab
-  artifactKey: Guid(50555a201aa4fc549a35a0f2451b740a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/Ammo/Prefabs/5_45x39mm_cartridge.prefab using Guid(50555a201aa4fc549a35a0f2451b740a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60db7ad9573897c17fb5daa71e70a5d4') in 0.009020 seconds
-  Import took 0.012569 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.189708 seconds.
-  path: Assets/Cold War Weapons/AK74M/ak74m_demo/LightingData.asset
-  artifactKey: Guid(d2264b89b6878c04e96c34f0eeb30b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/ak74m_demo/LightingData.asset using Guid(d2264b89b6878c04e96c34f0eeb30b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13549bb90bc2b05d6bdbfa3963289215') in 0.007763 seconds
-  Import took 0.011164 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/Cold War Weapons/AK74M/ak74m_demo/Lightmap-0_comp_dir.png
-  artifactKey: Guid(0db59a7dc935165449520addec364c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/ak74m_demo/Lightmap-0_comp_dir.png using Guid(0db59a7dc935165449520addec364c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1d016f3aa854fef5299befce3877928') in 0.011747 seconds
-  Import took 0.016176 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/Cold War Weapons/AK74M/ak74m_demo/Lightmap-0_comp_light.exr
-  artifactKey: Guid(bd4549176311eca4fa2690b13e351965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/ak74m_demo/Lightmap-0_comp_light.exr using Guid(bd4549176311eca4fa2690b13e351965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd77abc21e95e1f0a1092c83a433856ab') in 0.016091 seconds
-  Import took 0.020008 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/Cold War Weapons/AK74M/ak74m_demo/ReflectionProbe-0.exr
-  artifactKey: Guid(0633bfd2e8a481346820f8c334e7d7a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/ak74m_demo/ReflectionProbe-0.exr using Guid(0633bfd2e8a481346820f8c334e7d7a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d9d87e1bea9c66800c7eae331b02258') in 0.025861 seconds
-  Import took 0.030550 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.776668 seconds.
-  path: Assets/Cold War Weapons/AK74M/Demo/Volume.asset
-  artifactKey: Guid(a997d6e1591a1e04ba24d51fc9005366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Demo/Volume.asset using Guid(a997d6e1591a1e04ba24d51fc9005366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '120039c775c65bd5f981dc7691e85c8c') in 0.006813 seconds
-  Import took 0.010871 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.852255 seconds.
-  path: Assets/Cold War Weapons/AK74M/Materials/ak74m.mat
-  artifactKey: Guid(7afc1f3fc61c20346afd575f2a77dfad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Materials/ak74m.mat using Guid(7afc1f3fc61c20346afd575f2a77dfad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '423e3e1a6014e2040883dcd7fbdcb1a9') in 0.012141 seconds
-  Import took 0.015704 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.186267 seconds.
-  path: Assets/Cold War Weapons/AK74M/Prefabs/ak74m.prefab
-  artifactKey: Guid(a1ce908bd03ca8d4d88b6f274062a0ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Prefabs/ak74m.prefab using Guid(a1ce908bd03ca8d4d88b6f274062a0ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c13a98d289e93212c4eabcfeb17a14e9') in 0.020824 seconds
-  Import took 0.024694 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.810337 seconds.
-  path: Assets/Cold War Weapons/AK74M/Demo/CameraRotate.cs
-  artifactKey: Guid(4807258b101eeb146acc1a41d233de3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Demo/CameraRotate.cs using Guid(4807258b101eeb146acc1a41d233de3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07077dc4910bcee07993fae95b811308') in 0.014670 seconds
-  Import took 0.019940 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002018 seconds.
-  path: Assets/Cold War Weapons/AK74M/Demo/CameraRotate.cs
-  artifactKey: Guid(4807258b101eeb146acc1a41d233de3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Demo/CameraRotate.cs using Guid(4807258b101eeb146acc1a41d233de3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07077dc4910bcee07993fae95b811308') in 0.001995 seconds
-  Import took 0.006138 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.689534 seconds.
-  path: Assets/Cold War Weapons/AK74M/Demo/ak74m_demo.unity
-  artifactKey: Guid(9a8826e8a0ff3cd49a0611ceaf7e40ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Demo/ak74m_demo.unity using Guid(9a8826e8a0ff3cd49a0611ceaf7e40ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8da05b38a35757e44774f0fafefd894') in 0.007662 seconds
-  Import took 0.011739 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.848907 seconds.
-  path: Assets/Cold War Weapons/AK74M/Demo/ak74m_demo
-  artifactKey: Guid(038f7796f50885f499251af9ed95b30a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Demo/ak74m_demo using Guid(038f7796f50885f499251af9ed95b30a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cbae905b3e99ca65b7cd2beebc3971a') in 0.007069 seconds
-  Import took 0.010504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.244993 seconds.
-  path: Assets/Cold War Weapons/AK74M/Materials/Textures
-  artifactKey: Guid(7771054ea77d1f347bb268cc1f611bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Materials/Textures using Guid(7771054ea77d1f347bb268cc1f611bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73ab431c1498238388d85a4ae2c9d77d') in 0.006668 seconds
-  Import took 0.011226 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.033555 seconds.
-  path: Assets/Cold War Weapons/AK74M/Materials/Textures/ak74m_AlbedoSmoothness.png
-  artifactKey: Guid(e2dc9aa152af80b49ba81fbaf8cfe416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Materials/Textures/ak74m_AlbedoSmoothness.png using Guid(e2dc9aa152af80b49ba81fbaf8cfe416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29975d45027f0f270291f344caa9fea') in 0.028983 seconds
-  Import took 0.033980 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/Cold War Weapons/AK74M/Materials/Textures/ak74m_Normal.png
-  artifactKey: Guid(dbf684b60b6bda5478749ff935a87883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Materials/Textures/ak74m_Normal.png using Guid(dbf684b60b6bda5478749ff935a87883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffe1a51c237c09b4a834d13a8e12bf0e') in 0.029299 seconds
-  Import took 0.034245 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/Cold War Weapons/AK74M/Materials/Textures/ak74m_MetallicSmoothness.png
-  artifactKey: Guid(b19794869bf7f8749a0a2d96f0d99770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Materials/Textures/ak74m_MetallicSmoothness.png using Guid(b19794869bf7f8749a0a2d96f0d99770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b422c3300489debcb8c379cdc5857c5c') in 0.038906 seconds
-  Import took 0.043732 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Cold War Weapons/AK74M/Materials/Textures/ak74m_AO.png
-  artifactKey: Guid(e4f11d5c7208fd54b868fd9b198d452a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Materials/Textures/ak74m_AO.png using Guid(e4f11d5c7208fd54b868fd9b198d452a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddcfd01afcaa25c9ca6572f1d3925ac7') in 0.024973 seconds
-  Import took 0.029718 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/Cold War Weapons/AK74M/Materials/Textures/ak74m_HDRP_Mask.png
-  artifactKey: Guid(dbe55c6e55b2f884397cea6be19df47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Materials/Textures/ak74m_HDRP_Mask.png using Guid(dbe55c6e55b2f884397cea6be19df47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11538ef2cbf94651a4694aac3ca8227a') in 0.027835 seconds
-  Import took 0.032549 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/Cold War Weapons/AK74M/Materials/Textures/ak74m_AlbedoTransparency.png
-  artifactKey: Guid(8ff7a95672562294d8e19c9941c04645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Materials/Textures/ak74m_AlbedoTransparency.png using Guid(8ff7a95672562294d8e19c9941c04645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed57aae130735c9209c4706a9acf174') in 0.028732 seconds
-  Import took 0.033234 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 150.028470 seconds.
-  path: Assets/Cold War Weapons/AK74M/Prefabs/ak74m 1.prefab
-  artifactKey: Guid(49e46c190cb3d3046ba1457890d5c977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Prefabs/ak74m 1.prefab using Guid(49e46c190cb3d3046ba1457890d5c977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1061efd2aad1f07c2448afe6a9b135f') in 0.046555 seconds
-  Import took 0.054587 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.096874 seconds.
-  path: Assets/Cold War Weapons/AK74M/Demo/ak74m_demo/ReflectionProbe-0.exr
-  artifactKey: Guid(6ae82189aebb84b4eaa06e68b741d48b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Demo/ak74m_demo/ReflectionProbe-0.exr using Guid(6ae82189aebb84b4eaa06e68b741d48b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2190124d3a1a5fd01abb79b64cbf1445') in 0.015024 seconds
-  Import took 0.019245 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.602055 seconds.
-  path: Assets/Cold War Weapons/AK74M
-  artifactKey: Guid(206f35a0e3e495f478d01a78e62813df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M using Guid(206f35a0e3e495f478d01a78e62813df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0393b81cfef5cb370c2e1de28ce98dc9') in 0.006948 seconds
-  Import took 0.011058 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.604655 seconds.
-  path: Assets/Cold War Weapons/AK74M/Animations
-  artifactKey: Guid(4e639ea2a10a98c47a6f6448fbed5927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cold War Weapons/AK74M/Animations using Guid(4e639ea2a10a98c47a6f6448fbed5927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a911d6105db146828fd8552d20c8d28') in 0.007386 seconds
-  Import took 0.011653 seconds .
+  Time since last request: 427.353901 seconds.
+  path: Assets/Scripts/Player controller.cs
+  artifactKey: Guid(bfb3983c518382b43ae8627612d2c32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player controller.cs using Guid(bfb3983c518382b43ae8627612d2c32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '979eea1f6b523fee68d997fa941b8b96') in 0.011550 seconds
+  Import took 0.014682 seconds .
 
