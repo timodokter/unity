@@ -1,6 +1,4 @@
-using System.Numerics;
 using UnityEngine;
-using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
 
 public class PlayerController : MonoBehaviour
@@ -19,9 +17,8 @@ public class PlayerController : MonoBehaviour
     
     public GameObject BulletPrefab;
 
-    private float BulletVelocity = 5; 
+    private float BulletVelocity = 30f; 
     private float fireTimer;
-    private float xRotationOfBullet, yRotationOfBullet, zRotationOfBullet, wRotationOfBullet;
 
     private bool shot;
 
@@ -47,7 +44,7 @@ public class PlayerController : MonoBehaviour
         {
             fireTimer += Time.deltaTime;
         }
-        if (fireTimer > 2f)
+        if (fireTimer > 1f)
         {
             shot = false;
         }
@@ -55,11 +52,10 @@ public class PlayerController : MonoBehaviour
         {
             ShootGun();
         }
-        // Debug.Log(shot);
-        // Debug.Log(Mathf.Round(fireTimer));
-        // Debug.Log(xRotationOfBullet);
-        // Debug.Log(yRotationOfBullet);
-        // Debug.Log(zRotationOfBullet);
+        Debug.Log(shot);
+        Debug.Log(Mathf.Round(fireTimer));
+        
+        
     }
 
     private void ShootGun()
@@ -68,7 +64,11 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Mouse0))
             {
-                Instantiate(BulletPrefab, BulletSpawnPosition.position, BulletSpawnPosition.rotation);
+                GameObject instantiatedBullet = Instantiate(BulletPrefab, BulletSpawnPosition.position, BulletSpawnPosition.rotation);
+
+                instantiatedBullet.GetComponent<Rigidbody>().velocity =
+                    transform.TransformDirection(new Vector3(-BulletVelocity, 0, 0));
+                
                 shot = true;
                 fireTimer = 0;
                 Debug.Log("left mouse button is pressed");
