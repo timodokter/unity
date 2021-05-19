@@ -96,6 +96,11 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
+            if (extraAmmo <= 0)
+            {
+                extraAmmo = 0;
+            }
+
             //this function is in a different file and is used to show the ammo count in your gun and the extra bullets you have left
             GamemanagerX.UpdateAmmoCount();
 
@@ -153,8 +158,8 @@ public class PlayerController : MonoBehaviour
         }
         extraAmmo -= bulletsShot;
         bulletsShot = 0;
-
-        reloading = false;
+        
         weaponAnimator.SetBool("reloading", false);
+        reloading = false;
     }
 }

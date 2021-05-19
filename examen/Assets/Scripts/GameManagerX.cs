@@ -19,12 +19,14 @@ public class GamemanagerX : MonoBehaviour
 
     private float score;
     private float highScore;
+    private float totalBullets;
 
+    private float timer;
     private Canvas startScreen;
     private Canvas playScreen;
     private Canvas GameOverScreen;
 
-    private float timeToPlayTimer = 30;
+    private float _timeToPlayTimer = 30;
 
     // Start is called before the first frame update
     void Start()
@@ -43,28 +45,43 @@ public class GamemanagerX : MonoBehaviour
         startScreen = GameObject.FindWithTag("Start Screen").GetComponent<Canvas>();
         playScreen = GameObject.FindWithTag("UI During Game").GetComponent<Canvas>();
         GameOverScreen = GameObject.FindWithTag("GameOverScreen").GetComponent<Canvas>();
+
+        totalBullets = _playerController.currAmmo + _playerController.extraAmmo;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("playscreen" + playScreen.enabled);
-        Debug.Log("gameoverscreen" + GameOverScreen.enabled);
-        Debug.Log(Mathf.Round(timeToPlayTimer));
+
         if (isGameActive)
         {
-            timeToPlayTimer -= Time.deltaTime;
+            _timeToPlayTimer -= Time.deltaTime;
             
             UpdateTimerText();
         }
+        
+        if (_timeToPlayTimer <= 0)
+        {
+            StopGame();
+        }
 
-        StartCoroutine(CheckIfTheGameShouldStop());
+        if (_playerController.totalBulletsShot >= totalBullets)
+        {
+            timer += Time.deltaTime;
+            if (timer > 2.5f)
+            {
+                timer = 0;
+                StopGame();
+                Debug.Log("ik run");
+            }
+        }
+        // CheckIfTheGameShouldStop();
     }
     
     //function for updating the timer in the top rightt
     private void UpdateTimerText()
     {
-        timeToPlayTimerText.text = "Time: " + Mathf.Round(timeToPlayTimer);
+        timeToPlayTimerText.text = "Time: " + Mathf.Round(_timeToPlayTimer);
     }
 
     //function for keeping track of your amount of bullets
@@ -93,21 +110,6 @@ public class GamemanagerX : MonoBehaviour
         score += pointValue;
         ScoreText.text = "Score: " + score;
     }
-    
-    //function for checking if the game should be stopped
-    private IEnumerator CheckIfTheGameShouldStop()
-    {
-        if (timeToPlayTimer <=0)
-        {
-            StopGame();
-        }
-        if (_playerController.totalBulletsShot >= 60)
-        {
-            yield return new WaitForSeconds(2.5f);
-            StopGame();
-            timeToPlayTimer = 0;
-        }
-    }
 
     //start the game
     public void StartGame()
@@ -124,6 +126,9 @@ public class GamemanagerX : MonoBehaviour
         isGameActive = false;
         playScreen.enabled = false;
         GameOverScreen.enabled = true;
+        _playerController.totalBulletsShot = 0;
+        _timeToPlayTimer = 30;
+        Debug.Log("ik stop");
     }
 
     //restart the game
@@ -134,7 +139,7 @@ public class GamemanagerX : MonoBehaviour
         _playerController.currAmmo = 30;
         _playerController.extraAmmo = 30;
         score = 0;
-        timeToPlayTimer = 30;
+        UpdateScore(score);
         isGameActive = true;
         playScreen.enabled = true;
         GameOverScreen.enabled = false;
