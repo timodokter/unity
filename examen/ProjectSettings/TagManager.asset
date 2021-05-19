@@ -5,6 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Weapon
+  - AmmoCountText
+  - TargetBody
+  - TargetHead
+  - ScoreText
+  - UI During Game
+  - Start Screen
+  - GameOverScreen
+  - HighScoreText
+  - EndScreenScoreText
+  - timeToPlayTimer
   layers:
   - Default
   - TransparentFX
